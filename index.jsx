@@ -21,15 +21,13 @@ import AuthRequired from "./components/AuthRequired"
 
 import "./server"
 
+
+
+
 function App() {
-  /**
-   * Challenge: Create the AuthRequired Layout Route to protect
-   * all the /host routes.
-   * 
-   * For now, just use `const authenticated = false`
-   * to determine the authenticated status of the user, and
-   * either send them to the /login route, or render the Outlet
-   */
+
+
+
 
   return (
     <BrowserRouter>
