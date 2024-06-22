@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore/lite"
+import { getFirestore, collection } from "firebase/firestore/lite"
 
 const firebaseConfig = {
     apiKey: "AIzaSyCA8FDmtl5OTzsyIYcXSgw2wT-2o658Cd4",
@@ -12,6 +12,10 @@ const firebaseConfig = {
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app)
+  const vansCollectionRef = collection(db, "vans")
+
+
+
 
 export async function getVans(id) {
 
